@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grand Power Tyre LLC — 24/7 Tyre & Puncture Service in Al Quoz, Dubai</title>
+<meta name="description" content="Grand Power Tyre LLC — genuinely open 24/7 in Al Quoz, Dubai. Fast puncture repair, new tyres, wheel balancing, alignment and roadside rescue. 3.9★ · 136 Google reviews. Call 04 321 2889." />
+<meta name="theme-color" content="#0E0F12" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="Grand Power Tyre LLC — Actually Open 24/7 in Dubai" />
+<meta property="og:description" content="Flat tyre at midnight? While others fake their hours, we keep the lights on. Puncture repair, new tyres & roadside rescue in Al Quoz, Dubai." />
+<meta property="og:locale" content="en_AE" />
+<meta property="og:locale:alternate" content="ar_AE" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --bg:#0E0F12;
+  --surface:#15171D;
+  --surface-2:#1C1F27;
+  --line:rgba(255,255,255,.09);
+  --text:#F5F5F3;
+  --muted:#A7ABB6;
+  --accent:#FFA51F;
+  --accent-2:#FF7A00;
+  --accent-ink:#140C00;
+  --star:#FFB627;
+  --shadow:0 24px 60px -20px rgba(0,0,0,.65);
+  --radius:20px;
+  --maxw:1180px;
+  --font-head:'Archivo',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+}
+[data-theme="light"]{
+  --bg:#F5F5F3;
+  --surface:#FFFFFF;
+  --surface-2:#F1F1EE;
+  --line:rgba(14,15,18,.10);
+  --text:#14161B;
+  --muted:#5C616E;
+  --accent:#F0850A;
+  --accent-2:#E85D00;
+  --accent-ink:#FFFFFF;
+  --star:#F5A302;
+  --shadow:0 24px 50px -22px rgba(20,22,27,.22);
+}
+html[lang="ar"]{ --font-head:'Cairo',sans-serif; --font-body:'Cairo',sans-serif; }
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:var(--font-body);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  transition:background .4s ease,color .4s ease;
+}
+h1,h2,h3,.h{font-family:var(--font-head);font-weight:900;line-height:1.04;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+section{padding:clamp(64px,9vw,120px) 0}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.accent{color:var(--accent)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-head);font-weight:700;font-size:.78rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  padding:8px 14px;border:1px solid var(--line);border-radius:100px;
+  background:color-mix(in srgb,var(--accent) 8%,transparent);
+}
+html[lang="ar"] .eyebrow{letter-spacing:0}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-head h2{font-size:clamp(2rem,4.6vw,3.2rem);margin:18px 0 14px}
+.section-head p{color:var(--muted);font-size:1.06rem}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--font-head);font-weight:800;font-size:1rem;
+  padding:15px 26px;border-radius:14px;cursor:pointer;border:1px solid transparent;
+  transition:transform .18s ease,box-shadow .25s ease,background .25s ease,color .2s ease;
+  white-space:nowrap;
+}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 12px 30px -10px color-mix(in srgb,var(--accent) 70%,transparent)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px color-mix(in srgb,var(--accent) 75%,transparent)}
+.btn-wa{background:#25D366;color:#08240F}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 18px 36px -12px rgba(37,211,102,.5)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:var(--accent);color:var(--accent)}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(14px);border-bottom:1px solid transparent;
+  transition:border-color .3s ease,background .3s ease;
+}
+header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-head);font-weight:900;font-size:1.15rem}
+.brand .mark{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:linear-gradient(145deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;color:var(--accent-ink);
+  box-shadow:0 8px 20px -8px color-mix(in srgb,var(--accent) 80%,transparent);
+}
+.brand .mark svg{width:24px;height:24px}
+.brand b{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-weight:600;font-size:.95rem;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-tools{display:flex;align-items:center;gap:10px}
+.icon-btn{
+  width:42px;height:42px;border-radius:11px;border:1px solid var(--line);
+  background:var(--surface);color:var(--text);cursor:pointer;
+  display:grid;place-items:center;transition:all .2s;font-family:var(--font-head);font-weight:800;font-size:.82rem;
+}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+.icon-btn svg{width:20px;height:20px}
+.sun{display:none}
+[data-theme="light"] .sun{display:block}
+[data-theme="light"] .moon{display:none}
+.header-cta{display:inline-flex}
+.burger{display:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding-top:clamp(48px,7vw,84px);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(120% 80% at 82% -10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 55%),
+    radial-gradient(90% 70% at 0% 100%,color-mix(in srgb,var(--accent-2) 12%,transparent),transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);margin:22px 0}
+.hero h1 em{font-style:normal;color:var(--accent);position:relative;white-space:nowrap}
+.hero p.lead{font-size:1.18rem;color:var(--muted);max-width:540px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 26px}
+.trust{display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+.trust .stars{color:var(--star);letter-spacing:2px;font-size:1.05rem}
+.trust b{color:var(--text)}
+.trust .dot{width:4px;height:4px;border-radius:50%;background:var(--muted);opacity:.5}
+.badge-live{display:inline-flex;align-items:center;gap:8px;color:#3ddc84;font-weight:700}
+.badge-live .pulse{width:9px;height:9px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+
+.hero-card{
+  background:linear-gradient(160deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow);position:relative;
+}
+.hero-card .tyre{
+  width:150px;height:150px;margin:0 auto 8px;color:var(--accent);
+  animation:spin 14s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-card h3{font-size:1.35rem;text-align:center;margin-bottom:4px}
+.hero-card .sub{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:20px}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center}
+.mini-stats div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 8px}
+.mini-stats b{display:block;font-family:var(--font-head);font-size:1.5rem;color:var(--accent)}
+.mini-stats span{font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+/* ---------- Features ---------- */
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feature{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 24px;transition:transform .25s ease,border-color .25s ease;
+}
+.feature:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.feature .ico{
+  width:52px;height:52px;border-radius:13px;display:grid;place-items:center;margin-bottom:16px;
+  background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);
+}
+.feature .ico svg{width:26px;height:26px}
+.feature h3{font-size:1.16rem;margin-bottom:8px}
+.feature p{color:var(--muted);font-size:.95rem}
+
+/* ---------- Services ---------- */
+#services{background:var(--surface)}
+[data-theme="light"] #services{background:var(--surface-2)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{
+  position:relative;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 26px;overflow:hidden;transition:transform .25s ease,border-color .25s ease;
+}
+[data-theme="light"] .svc{background:#fff}
+.svc:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.svc::after{
+  content:"";position:absolute;inset-inline-start:0;top:0;height:100%;width:4px;
+  background:linear-gradient(var(--accent),var(--accent-2));transform:scaleY(0);transform-origin:top;transition:transform .3s ease;
+}
+.svc:hover::after{transform:scaleY(1)}
+.svc .ico{width:48px;height:48px;color:var(--accent);margin-bottom:16px}
+.svc .ico svg{width:100%;height:100%}
+.svc h3{font-size:1.2rem;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc-cta{text-align:center;margin-top:46px}
+
+/* ---------- Reviews ---------- */
+.reviews-top{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+.rating-box{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 30px;display:flex;align-items:center;gap:20px;box-shadow:var(--shadow)
+}
+.rating-num{font-family:var(--font-head);font-size:3.4rem;color:var(--accent);line-height:1}
+.rating-box .stars{color:var(--star);font-size:1.2rem;letter-spacing:2px}
+.rating-box small{color:var(--muted);display:block;margin-top:2px}
+.g-logo{font-family:var(--font-head);font-weight:800}
+.g-logo .b{color:#4285F4}.g-logo .r{color:#EA4335}.g-logo .y{color:#FBBC05}.g-logo .g{color:#34A853}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;display:flex;flex-direction:column;gap:14px;transition:transform .25s ease
+}
+.review:hover{transform:translateY(-5px)}
+.review .stars{color:var(--star);letter-spacing:2px}
+.review p{font-size:.97rem;color:var(--text)}
+.review .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.review .av{
+  width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-family:var(--font-head);font-weight:800;color:var(--accent-ink);
+  background:linear-gradient(145deg,var(--accent),var(--accent-2))
+}
+.review .who b{display:block;font-size:.95rem}
+.review .who span{font-size:.8rem;color:var(--muted)}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px}
+.gitem{
+  border-radius:var(--radius);overflow:hidden;position:relative;border:1px solid var(--line);
+  display:grid;place-items:center;color:#fff;text-align:center;padding:16px;
+  font-family:var(--font-head);font-weight:800;font-size:1.05rem;
+}
+.gitem::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55))}
+.gitem span{position:relative;z-index:2}
+.gitem svg{position:relative;z-index:2;width:40px;height:40px;margin-bottom:8px;opacity:.9}
+.gitem.tall{grid-row:span 2}
+.gitem.wide{grid-column:span 2}
+.g1{background:linear-gradient(135deg,#2b2f38,#0e0f12)}
+.g2{background:linear-gradient(135deg,#4a3410,#1a1408)}
+.g3{background:linear-gradient(135deg,#2f2f34,#141416)}
+.g4{background:linear-gradient(135deg,#3a2a08,#0e0f12)}
+.g5{background:linear-gradient(135deg,#22262e,#0e0f12)}
+
+/* ---------- Contact ---------- */
+#contact{background:var(--surface)}
+[data-theme="light"] #contact{background:var(--surface-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.info-list{display:flex;flex-direction:column;gap:18px;margin:26px 0}
+.info-item{display:flex;gap:16px;align-items:flex-start}
+.info-item .ico{
+  width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)
+}
+.info-item .ico svg{width:22px;height:22px}
+.info-item b{display:block;font-family:var(--font-head);margin-bottom:2px}
+.info-item a,.info-item span{color:var(--muted)}
+.info-item a:hover{color:var(--accent)}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:230px;margin-top:24px}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.2)}
+.form{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+[data-theme="light"] .form{background:#fff}
+.form h3{font-size:1.4rem;margin-bottom:6px}
+.form .fs{color:var(--muted);font-size:.94rem;margin-bottom:20px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:7px}
+.field input,.field textarea{
+  width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);
+  background:var(--surface);color:var(--text);font-family:inherit;font-size:.98rem;transition:border-color .2s
+}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.field textarea{resize:vertical;min-height:100px}
+.form .btn{width:100%}
+.form-note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:12px}
+.form-ok{display:none;text-align:center;padding:16px;border-radius:12px;margin-top:14px;
+  background:color-mix(in srgb,#25D366 15%,transparent);color:#2fbb63;font-weight:600}
+
+/* ---------- Footer ---------- */
+footer{padding:56px 0 34px;border-top:1px solid var(--line)}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand{max-width:320px}
+.foot-brand p{color:var(--muted);font-size:.94rem;margin-top:14px}
+.socials{display:flex;gap:12px;margin-top:18px}
+.socials a{
+  width:42px;height:42px;border-radius:11px;border:1px solid var(--line);display:grid;place-items:center;
+  color:var(--muted);transition:all .2s
+}
+.socials a:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-3px)}
+.socials svg{width:20px;height:20px}
+.foot-col h4{font-family:var(--font-head);margin-bottom:14px;font-size:1rem}
+.foot-col a{display:block;color:var(--muted);font-size:.92rem;margin-bottom:9px;transition:color .2s}
+.foot-col a:hover{color:var(--accent)}
+.copy{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;text-align:center}
+
+/* ---------- Floating actions ---------- */
+.fab{position:fixed;inset-block-end:22px;inset-inline-end:22px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.fab a{
+  width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow);
+  transition:transform .2s
+}
+.fab a:hover{transform:scale(1.08)}
+.fab .wa{background:#25D366;color:#fff}
+.fab .call{background:var(--accent);color:var(--accent-ink)}
+.fab svg{width:26px;height:26px}
+
+/* ---------- Reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+[data-delay="1"]{transition-delay:.08s}[data-delay="2"]{transition-delay:.16s}
+[data-delay="3"]{transition-delay:.24s}[data-delay="4"]{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero-card .tyre{animation:none}}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .services-grid,.reviews-grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .hero-card{max-width:460px;margin:0 auto}
+}
+@media(max-width:640px){
+  .nav-links,.header-cta{display:none}
+  .burger{display:grid}
+  .nav-links.open{
+    display:flex;flex-direction:column;position:absolute;inset-inline:0;top:72px;
+    background:var(--bg);border-bottom:1px solid var(--line);padding:20px 24px;gap:18px
+  }
+  .features,.services-grid,.reviews-grid,.gallery{grid-template-columns:1fr}
+  .gitem.tall,.gitem.wide{grid-row:auto;grid-column:auto}
+  .rating-box{width:100%}
+  .mini-stats b{font-size:1.25rem}
+  .fab{inset-block-end:16px;inset-inline-end:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+      </span>
+      Grand<b>Power</b>
+    </a>
+
+    <nav class="nav-links" id="menu">
+      <a href="#about" data-i18n="nav_about">Why us</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="icon-btn" id="langBtn" aria-label="Switch language" title="العربية / English">
+        <span id="langLabel">AR</span>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+      </button>
+      <a href="tel:+97143212889" class="btn btn-primary header-cta" data-i18n="nav_call">Call now</a>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow reveal" data-i18n="hero_eyebrow">24/7 Tyre & Puncture Service · Al Quoz, Dubai</span>
+      <h1 class="reveal" data-delay="1"><span data-i18n="hero_title_1">Flat tyre at midnight?</span> <em data-i18n="hero_title_2">We're actually open.</em></h1>
+      <p class="lead reveal" data-delay="2" data-i18n="hero_lead">While other shops fake their hours and leave you stranded, Grand Power Tyre keeps the lights on around the clock. Fast punctures, new tyres, balancing and roadside rescue — done right, priced fair.</p>
+
+      <div class="hero-cta reveal" data-delay="3">
+        <a href="tel:+97143212889" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.5a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+          <span data-i18n="hero_cta_call">Call now</span>
+        </a>
+        <a href="https://wa.me/97143212889?text=Hi%20Grand%20Power%20Tyre%2C%20I%20need%20help%20with%20my%20tyres" target="_blank" rel="noopener" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.4.5c-.2.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.8-.1 1.4Z"/></svg>
+          <span data-i18n="hero_cta_wa">WhatsApp us</span>
+        </a>
+      </div>
+
+      <div class="trust reveal" data-delay="4">
+        <span><span class="stars">★★★★<span style="opacity:.4">★</span></span> <b>3.9</b></span>
+        <span class="dot"></span>
+        <span><b>136</b> <span data-i18n="hero_reviews">Google reviews</span></span>
+        <span class="dot"></span>
+        <span class="badge-live"><span class="pulse"></span><span data-i18n="hero_open">Open now · 24 hours</span></span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal" data-delay="2">
+      <svg class="tyre" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true">
+        <circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="12"/>
+        <g stroke-width="6"><path d="M50 4v14M50 82v14M4 50h14M82 50h14M18 18l10 10M72 72l10 10M82 18 72 28M28 72 18 82"/></g>
+      </svg>
+      <h3 data-i18n="card_title">Stranded right now?</h3>
+      <p class="sub" data-i18n="card_sub">We answer 24/7 — even at 3 AM.</p>
+      <div class="mini-stats">
+        <div><b>24/7</b><span data-i18n="card_s1">Open</span></div>
+        <div><b>10<span style="font-size:1rem">min</span></b><span data-i18n="card_s2">Fast fix</span></div>
+        <div><b>136</b><span data-i18n="card_s3">Reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="why_eyebrow">Why Grand Power</span>
+      <h2 data-i18n="why_title">The tyre shop that actually shows up</h2>
+      <p data-i18n="why_sub">No fake opening hours. No inflated bills. Just skilled hands and a team you can count on — day or night.</p>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3 data-i18n="f1_t">Genuinely 24/7</h3>
+        <p data-i18n="f1_p">We pick up at 3 AM. Real people, real help, every single night of the year.</p>
+      </div>
+      <div class="feature reveal" data-delay="1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+        <h3 data-i18n="f2_t">In & out fast</h3>
+        <p data-i18n="f2_p">Most punctures fixed in minutes. No long queues, no wasted time.</p>
+      </div>
+      <div class="feature reveal" data-delay="2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3 data-i18n="f3_t">Fair, upfront prices</h3>
+        <p data-i18n="f3_p">Honest quotes before we start. No surprises when it's time to pay.</p>
+      </div>
+      <div class="feature reveal" data-delay="3">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.2a1.6 1.6 0 0 0-2.7-1.1l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.6 1.6 0 0 0 4 15H3.8a2 2 0 1 1 0-4H4a1.6 1.6 0 0 0 1.1-2.7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 2.7-1.1V4a2 2 0 1 1 4 0v.2a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8Z"/></svg></div>
+        <h3 data-i18n="f4_t">A team that knows tyres</h3>
+        <p data-i18n="f4_p">Abbas, Mehdi and the crew are skilled, kind and happy to explain everything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="svc_eyebrow">What we do</span>
+      <h2 data-i18n="svc_title">Everything your wheels need</h2>
+      <p data-i18n="svc_sub">Cars, SUVs and vans — from a quick puncture to a full new set. All under one roof, all night long.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3 data-i18n="s1_t">Puncture Repair</h3>
+        <p data-i18n="s1_p">Quick, reliable puncture fixes for cars and vans — day or night, done properly.</p>
+      </div>
+      <div class="svc reveal" data-delay="1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <h3 data-i18n="s2_t">New Tyres</h3>
+        <p data-i18n="s2_p">Quality tyres for every make and budget, fitted on the spot while you wait.</p>
+      </div>
+      <div class="svc reveal" data-delay="2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3 data-i18n="s3_t">Balancing & Alignment</h3>
+        <p data-i18n="s3_p">Precision wheel balancing and alignment for smooth, safe, straight-line driving.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-5h6l2 5h3"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5"/></svg></div>
+        <h3 data-i18n="s4_t">24/7 Roadside Rescue</h3>
+        <p data-i18n="s4_p">Stuck on the road? Call us and we'll get you rolling again — fast.</p>
+      </div>
+      <div class="svc reveal" data-delay="1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+        <h3 data-i18n="s5_t">Tyre Change & Rotation</h3>
+        <p data-i18n="s5_p">Fast tyre swaps and rotation to keep wear even and extend tyre life.</p>
+      </div>
+      <div class="svc reveal" data-delay="2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3 data-i18n="s6_t">Pressure & Nitrogen</h3>
+        <p data-i18n="s6_p">Free pressure checks and nitrogen top-ups to keep every tyre road-ready.</p>
+      </div>
+    </div>
+    <div class="svc-cta reveal">
+      <a href="https://wa.me/97143212889?text=Hi%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="svc_btn">Get a quick quote on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="rev_eyebrow">Real Google reviews</span>
+      <h2 data-i18n="rev_title">Drivers across Dubai trust us</h2>
+    </div>
+
+    <div class="reviews-top reveal">
+      <div class="rating-box">
+        <div>
+          <div class="rating-num">3.9</div>
+          <div class="stars">★★★★<span style="opacity:.4">★</span></div>
+        </div>
+        <div>
+          <div class="g-logo"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></div>
+          <small data-i18n="rev_count">Based on 136 reviews</small>
+        </div>
+      </div>
+      <a href="https://www.google.com/maps/place/Grand+Power+Tyre+LLC/@25.1453668,55.226975,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6980c4b04837:0xc70ecbb3bbc26191!8m2!3d25.1453668!4d55.2295499" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="rev_all">See all reviews</a>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="r1_p">"A total lifesaver! After a bad tyre puncture in the middle of the night, two other nearby shops falsely claiming to be open 24 hours left me completely stranded. Grand Power Tyre was actually open and ready to help."</p>
+        <div class="who"><span class="av">H</span><div><b>Himal Dilantha</b><span data-i18n="r1_m">1 month ago</span></div></div>
+      </div>
+      <div class="review reveal" data-delay="1">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="r2_p">"Excellent experience. Got my car tyre changed quickly and professionally — highly recommended."</p>
+        <div class="who"><span class="av">M</span><div><b>Manzoor (Pehlwan)</b><span data-i18n="r2_m">Local Guide · 1 month ago</span></div></div>
+      </div>
+      <div class="review reveal" data-delay="2">
+        <div class="stars">★★★★★</div>
+        <p data-i18n="r3_p">"A great experience at Grand Power! The service was quick, professional and reasonably priced. Special shoutout to Abbas and Mehdi — both incredibly helpful, kind and knowledgeable. They took the time to explain everything."</p>
+        <div class="who"><span class="av">M</span><div><b>Mani Karimi</b><span data-i18n="r3_m">Local Guide · 1 year ago</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="gal_eyebrow">Inside the workshop</span>
+      <h2 data-i18n="gal_title">Where the work gets done</h2>
+    </div>
+    <div class="gallery">
+      <div class="gitem g1 tall reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="gal_1">The workshop floor</span></div>
+      <div class="gitem g2 wide reveal" data-delay="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-5h6l2 5h3"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></svg><span data-i18n="gal_2">Tyres fitted on the spot</span></div>
+      <div class="gitem g3 reveal" data-delay="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg><span data-i18n="gal_3">Wheel balancing</span></div>
+      <div class="gitem g4 reveal" data-delay="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><span data-i18n="gal_4">Open through the night</span></div>
+      <div class="gitem g5 wide reveal" data-delay="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 8h-3l-2-3H9L7 8H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2Z"/><circle cx="12" cy="13" r="3"/></svg><span data-i18n="gal_5">136 happy drivers & counting</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="con_eyebrow">Find us</span>
+      <h2 style="font-size:clamp(2rem,4.6vw,3.2rem);margin:16px 0" class="h" data-i18n="con_title">Come by, or we'll come to you</h2>
+      <p style="color:var(--muted)" data-i18n="con_sub">Right in the heart of Al Quoz Industrial Area — open every hour of every day.</p>
+
+      <div class="info-list">
+        <div class="info-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><b data-i18n="con_addr_t">Address</b><span data-i18n="con_addr">Al Quoz Industrial First, Al Quoz, Dubai, UAE (46WH+4R)</span></div>
+        </div>
+        <div class="info-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><b data-i18n="con_hours_t">Opening hours</b><span data-i18n="con_hours">Open 24 hours · 7 days a week</span></div>
+        </div>
+        <div class="info-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.5a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+          <div><b data-i18n="con_phone_t">Phone / WhatsApp</b><a href="tel:+97143212889">+971 4 321 2889</a></div>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe title="Grand Power Tyre LLC location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=25.1453668,55.2295499&hl=en&z=16&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="form reveal" data-delay="1">
+      <h3 data-i18n="form_t">Request a callback</h3>
+      <p class="fs" data-i18n="form_s">Tell us what you need — we'll reply fast, day or night.</p>
+      <form id="leadForm">
+        <div class="field">
+          <label data-i18n="form_name">Your name</label>
+          <input type="text" name="name" required placeholder="Ahmed" />
+        </div>
+        <div class="field">
+          <label data-i18n="form_phone">Phone number</label>
+          <input type="tel" name="phone" required placeholder="+971 50 000 0000" />
+        </div>
+        <div class="field">
+          <label data-i18n="form_msg">What do you need?</label>
+          <textarea name="message" data-i18n-ph="form_msg_ph" placeholder="Puncture repair, new tyres, roadside help…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="form_btn">Send request</button>
+        <p class="form-note" data-i18n="form_note">Or message us directly on WhatsApp for the fastest reply.</p>
+      </form>
+      <div class="form-ok" id="formOk" data-i18n="form_ok">✓ Thanks! We'll call you back shortly.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span>
+          Grand<b>Power</b>
+        </a>
+        <p data-i18n="foot_p">Al Quoz's genuinely 24/7 tyre & puncture specialists. Fast, fair and always open.</p>
+        <div class="socials">
+          <a href="https://wa.me/97143212889" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.4.5c-.2.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.8-.1 1.4Z"/></svg></a>
+          <a href="tel:+97143212889" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.5a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></a>
+          <a href="https://www.google.com/maps/place/Grand+Power+Tyre+LLC/@25.1453668,55.226975,17z" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_nav">Navigate</h4>
+        <a href="#about" data-i18n="nav_about">Why us</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_reach">Reach us</h4>
+        <a href="tel:+97143212889">+971 4 321 2889</a>
+        <a href="https://wa.me/97143212889" target="_blank" rel="noopener">WhatsApp</a>
+        <span style="color:var(--muted);font-size:.92rem;display:block;margin-bottom:9px" data-i18n="con_hours">Open 24 hours · 7 days a week</span>
+        <span style="color:var(--muted);font-size:.92rem" data-i18n="foot_loc">Al Quoz, Dubai</span>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Grand Power Tyre LLC · <span data-i18n="foot_rights">All rights reserved.</span></div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="fab">
+  <a class="wa" href="https://wa.me/97143212889?text=Hi%20Grand%20Power%20Tyre" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.4.5c-.2.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.8-.1 1.4Z"/></svg>
+  </a>
+  <a class="call" href="tel:+97143212889" aria-label="Call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.5a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ---------- i18n dictionary (EN / AR) ---------- */
+const I18N = {
+  en:{
+    nav_about:"Why us",nav_services:"Services",nav_reviews:"Reviews",nav_gallery:"Gallery",nav_contact:"Contact",nav_call:"Call now",
+    hero_eyebrow:"24/7 Tyre & Puncture Service · Al Quoz, Dubai",
+    hero_title_1:"Flat tyre at midnight?",hero_title_2:"We're actually open.",
+    hero_lead:"While other shops fake their hours and leave you stranded, Grand Power Tyre keeps the lights on around the clock. Fast punctures, new tyres, balancing and roadside rescue — done right, priced fair.",
+    hero_cta_call:"Call now",hero_cta_wa:"WhatsApp us",hero_reviews:"Google reviews",hero_open:"Open now · 24 hours",
+    card_title:"Stranded right now?",card_sub:"We answer 24/7 — even at 3 AM.",card_s1:"Open",card_s2:"Fast fix",card_s3:"Reviews",
+    why_eyebrow:"Why Grand Power",why_title:"The tyre shop that actually shows up",
+    why_sub:"No fake opening hours. No inflated bills. Just skilled hands and a team you can count on — day or night.",
+    f1_t:"Genuinely 24/7",f1_p:"We pick up at 3 AM. Real people, real help, every single night of the year.",
+    f2_t:"In & out fast",f2_p:"Most punctures fixed in minutes. No long queues, no wasted time.",
+    f3_t:"Fair, upfront prices",f3_p:"Honest quotes before we start. No surprises when it's time to pay.",
+    f4_t:"A team that knows tyres",f4_p:"Abbas, Mehdi and the crew are skilled, kind and happy to explain everything.",
+    svc_eyebrow:"What we do",svc_title:"Everything your wheels need",
+    svc_sub:"Cars, SUVs and vans — from a quick puncture to a full new set. All under one roof, all night long.",
+    s1_t:"Puncture Repair",s1_p:"Quick, reliable puncture fixes for cars and vans — day or night, done properly.",
+    s2_t:"New Tyres",s2_p:"Quality tyres for every make and budget, fitted on the spot while you wait.",
+    s3_t:"Balancing & Alignment",s3_p:"Precision wheel balancing and alignment for smooth, safe, straight-line driving.",
+    s4_t:"24/7 Roadside Rescue",s4_p:"Stuck on the road? Call us and we'll get you rolling again — fast.",
+    s5_t:"Tyre Change & Rotation",s5_p:"Fast tyre swaps and rotation to keep wear even and extend tyre life.",
+    s6_t:"Pressure & Nitrogen",s6_p:"Free pressure checks and nitrogen top-ups to keep every tyre road-ready.",
+    svc_btn:"Get a quick quote on WhatsApp",
+    rev_eyebrow:"Real Google reviews",rev_title:"Drivers across Dubai trust us",rev_count:"Based on 136 reviews",rev_all:"See all reviews",
+    r1_p:"\"A total lifesaver! After a bad tyre puncture in the middle of the night, two other nearby shops falsely claiming to be open 24 hours left me completely stranded. Grand Power Tyre was actually open and ready to help.\"",r1_m:"1 month ago",
+    r2_p:"\"Excellent experience. Got my car tyre changed quickly and professionally — highly recommended.\"",r2_m:"Local Guide · 1 month ago",
+    r3_p:"\"A great experience at Grand Power! The service was quick, professional and reasonably priced. Special shoutout to Abbas and Mehdi — both incredibly helpful, kind and knowledgeable. They took the time to explain everything.\"",r3_m:"Local Guide · 1 year ago",
+    gal_eyebrow:"Inside the workshop",gal_title:"Where the work gets done",
+    gal_1:"The workshop floor",gal_2:"Tyres fitted on the spot",gal_3:"Wheel balancing",gal_4:"Open through the night",gal_5:"136 happy drivers & counting",
+    con_eyebrow:"Find us",con_title:"Come by, or we'll come to you",con_sub:"Right in the heart of Al Quoz Industrial Area — open every hour of every day.",
+    con_addr_t:"Address",con_addr:"Al Quoz Industrial First, Al Quoz, Dubai, UAE (46WH+4R)",
+    con_hours_t:"Opening hours",con_hours:"Open 24 hours · 7 days a week",con_phone_t:"Phone / WhatsApp",
+    form_t:"Request a callback",form_s:"Tell us what you need — we'll reply fast, day or night.",
+    form_name:"Your name",form_phone:"Phone number",form_msg:"What do you need?",form_msg_ph:"Puncture repair, new tyres, roadside help…",
+    form_btn:"Send request",form_note:"Or message us directly on WhatsApp for the fastest reply.",form_ok:"✓ Thanks! We'll call you back shortly.",
+    foot_p:"Al Quoz's genuinely 24/7 tyre & puncture specialists. Fast, fair and always open.",
+    foot_nav:"Navigate",foot_reach:"Reach us",foot_loc:"Al Quoz, Dubai",foot_rights:"All rights reserved."
+  },
+  ar:{
+    nav_about:"لماذا نحن",nav_services:"الخدمات",nav_reviews:"التقييمات",nav_gallery:"المعرض",nav_contact:"تواصل",nav_call:"اتصل الآن",
+    hero_eyebrow:"خدمة إطارات وإصلاح ثقوب على مدار الساعة · القوز، دبي",
+    hero_title_1:"إطار مثقوب في منتصف الليل؟",hero_title_2:"نحن مفتوحون فعلاً.",
+    hero_lead:"بينما تدّعي محلات أخرى أنها مفتوحة وتتركك عالقاً، تبقى Grand Power Tyre مفتوحة على مدار الساعة. إصلاح سريع للثقوب، إطارات جديدة، ترصيص ومساعدة على الطريق — بجودة عالية وسعر عادل.",
+    hero_cta_call:"اتصل الآن",hero_cta_wa:"واتساب",hero_reviews:"تقييم على جوجل",hero_open:"مفتوح الآن · 24 ساعة",
+    card_title:"عالق على الطريق الآن؟",card_sub:"نرد على مدار الساعة — حتى الثالثة فجراً.",card_s1:"مفتوح",card_s2:"إصلاح سريع",card_s3:"تقييم",
+    why_eyebrow:"لماذا Grand Power",why_title:"محل الإطارات الذي يحضر فعلاً",
+    why_sub:"لا ساعات عمل وهمية. لا فواتير مبالغ فيها. فقط أيدٍ ماهرة وفريق تعتمد عليه — ليلاً ونهاراً.",
+    f1_t:"مفتوح فعلاً 24/7",f1_p:"نرد عليك في الثالثة فجراً. أشخاص حقيقيون ومساعدة حقيقية كل ليلة طوال العام.",
+    f2_t:"دخول وخروج سريع",f2_p:"معظم الثقوب تُصلح خلال دقائق. لا طوابير ولا وقت ضائع.",
+    f3_t:"أسعار عادلة وواضحة",f3_p:"عرض سعر صادق قبل البدء. لا مفاجآت عند الدفع.",
+    f4_t:"فريق يفهم الإطارات",f4_p:"عباس ومهدي وباقي الفريق ماهرون ولطفاء ويشرحون كل شيء بسرور.",
+    svc_eyebrow:"ماذا نقدم",svc_title:"كل ما تحتاجه عجلاتك",
+    svc_sub:"سيارات ودفع رباعي وشاحنات صغيرة — من ثقب سريع إلى طقم إطارات كامل. كل ذلك تحت سقف واحد وطوال الليل.",
+    s1_t:"إصلاح الثقوب",s1_p:"إصلاح سريع وموثوق للثقوب للسيارات والشاحنات — ليلاً ونهاراً وبإتقان.",
+    s2_t:"إطارات جديدة",s2_p:"إطارات عالية الجودة لكل نوع وميزانية، تُركّب فوراً أثناء انتظارك.",
+    s3_t:"ترصيص وضبط زوايا",s3_p:"ترصيص وضبط دقيق للعجلات لقيادة ناعمة وآمنة ومستقيمة.",
+    s4_t:"مساعدة على الطريق 24/7",s4_p:"عالق على الطريق؟ اتصل بنا وسنعيدك للحركة بسرعة.",
+    s5_t:"تغيير وتدوير الإطارات",s5_p:"تبديل وتدوير سريع للإطارات لتوزيع التآكل وإطالة عمرها.",
+    s6_t:"ضغط الهواء والنيتروجين",s6_p:"فحص مجاني للضغط وتعبئة نيتروجين لإبقاء كل إطار جاهزاً للطريق.",
+    svc_btn:"احصل على عرض سعر سريع عبر واتساب",
+    rev_eyebrow:"تقييمات حقيقية من جوجل",rev_title:"سائقون في كل أنحاء دبي يثقون بنا",rev_count:"بناءً على 136 تقييماً",rev_all:"عرض كل التقييمات",
+    r1_p:"«أنقذوا موقفي تماماً! بعد ثقب سيئ في منتصف الليل، تركني محلان قريبان يدّعيان العمل 24 ساعة عالقاً تماماً. أما Grand Power Tyre فكانت مفتوحة فعلاً وجاهزة للمساعدة.»",r1_m:"قبل شهر",
+    r2_p:"«تجربة ممتازة. غيّرت إطار سيارتي بسرعة واحترافية — أنصح به بشدة.»",r2_m:"مرشد محلي · قبل شهر",
+    r3_p:"«تجربة رائعة في Grand Power! الخدمة سريعة واحترافية وبسعر معقول. تحية خاصة لعباس ومهدي — كلاهما متعاون ولطيف وعلى دراية. شرحا لي كل شيء بصبر.»",r3_m:"مرشد محلي · قبل سنة",
+    gal_eyebrow:"داخل الورشة",gal_title:"حيث يُنجَز العمل",
+    gal_1:"أرضية الورشة",gal_2:"تركيب الإطارات فوراً",gal_3:"ترصيص العجلات",gal_4:"مفتوح طوال الليل",gal_5:"136 سائقاً سعيداً والعدد يزداد",
+    con_eyebrow:"موقعنا",con_title:"مرّ علينا أو نأتي إليك",con_sub:"في قلب منطقة القوز الصناعية — مفتوح كل ساعة من كل يوم.",
+    con_addr_t:"العنوان",con_addr:"القوز الصناعية الأولى، القوز، دبي، الإمارات (46WH+4R)",
+    con_hours_t:"ساعات العمل",con_hours:"مفتوح 24 ساعة · 7 أيام في الأسبوع",con_phone_t:"هاتف / واتساب",
+    form_t:"اطلب معاودة الاتصال",form_s:"أخبرنا بما تحتاجه — سنرد بسرعة، ليلاً أو نهاراً.",
+    form_name:"اسمك",form_phone:"رقم الهاتف",form_msg:"ماذا تحتاج؟",form_msg_ph:"إصلاح ثقب، إطارات جديدة، مساعدة على الطريق…",
+    form_btn:"إرسال الطلب",form_note:"أو راسلنا مباشرة على واتساب للرد الأسرع.",form_ok:"✓ شكراً! سنعاود الاتصال بك قريباً.",
+    foot_p:"متخصصو الإطارات وإصلاح الثقوب في القوز على مدار الساعة فعلاً. سريع، عادل، ومفتوح دائماً.",
+    foot_nav:"تصفّح",foot_reach:"تواصل معنا",foot_loc:"القوز، دبي",foot_rights:"جميع الحقوق محفوظة."
+  }
+};
+
+/* ---------- Language switch ---------- */
+const html=document.documentElement;
+function applyLang(lang){
+  const dict=I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n'); if(dict[k]!==undefined) el.textContent=dict[k];
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+    const k=el.getAttribute('data-i18n-ph'); if(dict[k]!==undefined) el.setAttribute('placeholder',dict[k]);
+  });
+  html.lang=lang;
+  html.dir = lang==='ar' ? 'rtl' : 'ltr';
+  document.getElementById('langLabel').textContent = lang==='ar' ? 'EN' : 'AR';
+  localStorage.setItem('gpt_lang',lang);
+}
+document.getElementById('langBtn').addEventListener('click',()=>{
+  applyLang(html.lang==='ar' ? 'en' : 'ar');
+});
+
+/* ---------- Theme switch ---------- */
+function applyTheme(t){ html.setAttribute('data-theme',t); localStorage.setItem('gpt_theme',t);
+  document.querySelector('meta[name=theme-color]').setAttribute('content', t==='dark'?'#0E0F12':'#F5F5F3'); }
+document.getElementById('themeBtn').addEventListener('click',()=>{
+  applyTheme(html.getAttribute('data-theme')==='dark'?'light':'dark');
+});
+
+/* ---------- Init saved prefs ---------- */
+applyTheme(localStorage.getItem('gpt_theme') || 'dark');
+applyLang(localStorage.getItem('gpt_lang') || 'en');
+
+/* ---------- Scroll reveal ---------- */
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- Sticky header shadow ---------- */
+const hdr=document.querySelector('header');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10));
+
+/* ---------- Mobile menu ---------- */
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+/* ---------- Form (demo → WhatsApp handoff) ---------- */
+document.getElementById('leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const f=new FormData(this);
+  const txt=`Hello Grand Power Tyre! %0AName: ${f.get('name')}%0APhone: ${f.get('phone')}%0ANeed: ${f.get('message')||'-'}`;
+  document.getElementById('formOk').style.display='block';
+  this.reset();
+  setTimeout(()=>window.open('https://wa.me/97143212889?text='+txt,'_blank'),700);
+});
+
+/* ---------- Year ---------- */
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
