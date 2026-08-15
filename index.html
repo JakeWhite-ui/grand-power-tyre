@@ -123,6 +123,9 @@
   .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
   .hero-badges{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}
   .hero-badges .b b{font-family:'Oswald';font-size:30px;display:block;line-height:1;color:var(--yellow)}
+  .hero-logo{position:absolute;right:4%;top:50%;transform:translateY(-50%);width:min(44%,600px);z-index:1;filter:drop-shadow(0 22px 55px rgba(0,0,0,.55));pointer-events:none}
+  [dir="rtl"] .hero-logo{right:auto;left:4%}
+  @media(max-width:900px){.hero-logo{display:none}}
   .hero-badges .b span{color:#aeb2bb;font-size:12px;text-transform:uppercase;letter-spacing:1px}
 
   /* floating buttons */
@@ -448,6 +451,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img class="hero-logo reveal" src="assets/logo-day.png" alt="Grand Power Tyre LLC" onerror="this.remove()">
   <div class="wrap">
     <div class="hero-inner">
       <span class="tag reveal" data-i18n="hero.tag">Al Quoz · Dubai · Open 24/7</span>
